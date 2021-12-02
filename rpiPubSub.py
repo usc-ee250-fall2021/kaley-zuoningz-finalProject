@@ -34,7 +34,8 @@ def lcd_callback(client, userdata, message):
         txts = msg.split('$', 1)
         setText(txts[0][:15] + "\n" + txts[1][0:5] + "%")
       #  setText('\n' + txts[1])
-
+    
+    print(int(txts[1]))
     if int(txts[1]) > threshold:
         digitalWrite(led_light, 1)
     else:
