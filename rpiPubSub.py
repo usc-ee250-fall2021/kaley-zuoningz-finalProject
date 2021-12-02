@@ -37,7 +37,7 @@ def lcd_callback(client, userdata, message):
 
     if int(msg[2]) > threshold:
         digitalWrite(led_light, 1)
-    else
+    else:
         digitalWrite(led_light, 0)
 
 #Default message callback. Please use custom callbacks.
