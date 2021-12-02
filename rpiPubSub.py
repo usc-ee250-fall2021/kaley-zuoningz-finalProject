@@ -26,7 +26,7 @@ def on_connect(client, userdata, flags, rc):
 
 def lcd_callback(client, userdata, message):
     msg = str(message.payload.decode())
-#     print(msg)
+    print(msg)
     
     if msg == "":
         setText("ERROR")
