@@ -37,9 +37,9 @@ def lcd_callback(client, userdata, message):
     
     print(int(txts[1]))
     if int(txts[1]) > threshold:
-        digitalWrite(led_light, 1)
+        setRGB(255,0,0)
     else:
-        digitalWrite(led_light, 0)
+        setRGB(0,255,0)
 
 #Default message callback. Please use custom callbacks.
 def on_message(client, userdata, msg):
