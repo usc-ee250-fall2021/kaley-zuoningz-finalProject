@@ -28,7 +28,7 @@ def lcd_callback(client, userdata, message):
     msg = str(message.payload.decode())
     print(msg)
     
-    lcd.clear()
+    setCursor(0,0)
     
     if msg == "":
         setText("ERROR")
