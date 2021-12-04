@@ -36,9 +36,12 @@ def lcd_callback(client, userdata, message):
       #  setText('\n' + txts[1])
     
     print(int(txts[1]))
+    
     if int(txts[1]) > threshold:
+        print("above threshold")
         setRGB(255,0,0)
     else:
+        print("below threshold")
         setRGB(0,255,0)
 
 #Default message callback. Please use custom callbacks.
