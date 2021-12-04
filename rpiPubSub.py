@@ -28,6 +28,7 @@ def lcd_callback(client, userdata, message):
     msg = str(message.payload.decode())
     print(msg)
     
+    setRGB(0,0,255)
     #setCursor(0,0)
     
     if msg == "":
