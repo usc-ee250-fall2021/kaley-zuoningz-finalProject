@@ -40,7 +40,7 @@ def lcd_callback(client, userdata, message):
     
     print(txts[1])
     
-    print(type(txts))
+    print(type(txts[1]))
     
     #percent = int(txts[1])
     
