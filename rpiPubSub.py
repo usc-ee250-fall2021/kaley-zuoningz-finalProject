@@ -44,7 +44,7 @@ def lcd_callback(client, userdata, message):
     
     #percent = int(txts[1])
     
-    if parseInt(txts[1]) > threshold:
+    if float(txts[1]) > threshold:
         print("above threshold")
         setRGB(255,0,0)
     else:
