@@ -28,13 +28,13 @@ def lcd_callback(client, userdata, message):
     msg = str(message.payload.decode())
     print(msg)
     
-    setCursor(0,0)
+    #setCursor(0,0)
     
     if msg == "":
         setText("ERROR")
     else:
         txts = msg.split('$', 1)
-        setText(txts[0][:15] + "\n" + txts[1][0:5] + "%")
+        setText(txts[0][:15] + "\n" + txts[1][0:5] + "% RAM usage")
       #  setText('\n' + txts[1])
     
     print(int(txts[1]))
